@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FORCEONE | Team-3</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Poppins,sans-serif;
+  background:radial-gradient(circle at top,#0f1b2d,#050b14);
+  color:#fff;
+}
+header{
+  text-align:center;
+  padding:70px 20px;
+}
+.logo-wrap{
+  width:200px;
+  height:200px;
+  margin:0 auto;
+}
+svg{
+  width:100%;
+  height:100%;
+  filter:drop-shadow(0 0 25px rgba(200,80,255,.9));
+}
+h1{
+  margin-top:20px;
+  font-size:3rem;
+  letter-spacing:4px;
+  color:#c85bff;
+}
+.tagline{
+  margin-top:8px;
+  font-size:1.1rem;
+  letter-spacing:2px;
+}
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:60px 20px;
+}
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+.card{
+  background:linear-gradient(145deg,#0f2238,#091726);
+  border-radius:18px;
+  padding:25px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  transition:.3s;
+}
+.card:hover{transform:translateY(-8px)}
+.card p{color:#c85bff;font-size:.9rem}
+.badge{
+  display:inline-block;
+  margin-top:8px;
+  padding:4px 12px;
+  border-radius:20px;
+  background:#c85bff;
+  color:#000;
+  font-size:.75rem;
+  font-weight:600;
+}
+footer{
+  text-align:center;
+  padding:25px;
+  background:#040911;
+  color:#9aa7b6;
+  font-size:.85rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-wrap">
+    <!-- CLOSER SVG VERSION OF FORCEONE LOGO -->
+    <svg viewBox="0 0 200 200">
+      <defs>
+        <linearGradient id="metal" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#f2f2f2"/>
+          <stop offset="100%" stop-color="#9b9b9b"/>
+        </linearGradient>
+        <linearGradient id="purple" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#ff5cff"/>
+          <stop offset="100%" stop-color="#9b2cff"/>
+        </linearGradient>
+      </defs>
+
+      <!-- Outer metallic ring -->
+      <circle cx="100" cy="100" r="88" fill="none" stroke="url(#metal)" stroke-width="14"/>
+      <circle cx="100" cy="100" r="78" fill="none" stroke="url(#purple)" stroke-width="3"/>
+
+      <!-- Dark inner base -->
+      <circle cx="100" cy="100" r="70" fill="#0b1b2d"/>
+
+      <!-- X arms -->
+      <path d="M45 60 L70 40 L155 140 L130 160 Z" fill="#132f4c"/>
+      <path d="M155 60 L130 40 L45 140 L70 160 Z" fill="#132f4c"/>
+
+      <!-- Central V shape -->
+      <path d="M65 75 L100 135 L135 75" fill="none" stroke="url(#purple)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M75 80 L100 115 L125 80" fill="none" stroke="#eaeaea" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <h1>FORCEONE</h1>
+  <div class="tagline">DRIVEN BY FORCE</div>
+  <p>M-Power | Team-3</p>
+</header>
+
+<section>
+  <h2 style="text-align:center">Our <span style="color:#c85bff">Team</span></h2>
+  <div class="team-grid">
+    <div class="card"><h3>Sandra Pallikudath Bijukumar</h3><p>Captain</p><div class="badge">CAPTAIN</div></div>
+    <div class="card"><h3>Athul Krishna</h3><p>Vice Captain</p><div class="badge">VICE CAPTAIN</div></div>
+    <div class="card"><h3>Mohammed Shadhi</h3><p>Team Member</p></div>
+    <div class="card"><h3>Mohammed Rizwan</h3><p>Team Member</p></div>
+    <div class="card"><h3>Yadhukrishna Sajeev</h3><p>Team Member</p></div>
+    <div class="card"><h3>Nabeel Basheer</h3><p>Team Member</p></div>
+    <div class="card"><h3>Vishnu Nandan</h3><p>Team Member</p></div>
+    <div class="card"><h3>Nithin C</h3><p>Team Member</p></div>
+    <div class="card"><h3>Vinay Krishnan KR</h3><p>Team Member</p></div>
+  </div>
+</section>
+
+<footer>© 2025 FORCEONE | Team-3 | M-Power</footer>
+
+</body>
+</html>
